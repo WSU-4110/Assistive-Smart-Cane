@@ -3,7 +3,7 @@
 **Folders**
 - /app — web app (Vite/TypeScript)
 - /firmware — Arduino code + pinout
-- /hardware — wiring diagram, BOM
+- /hardware — wiring diagram
 - /docs — SRS, UML, sprint notes
 
 **Run web app**
