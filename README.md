@@ -1,9 +1,16 @@
-# Assistive Smart Cane App
+﻿# Assistive Smart Cane
 
-  This is a code bundle for Assistive Smart Cane App. The original project is available at https://www.figma.com/design/KVrb5kVJ7Cx3toyZY5iqFP/Assistive-Smart-Cane-App.
+**Folders**
+- /app — web app (Vite/TypeScript)
+- /firmware — Arduino code + pinout
+- /hardware — wiring diagram, BOM
+- /docs — SRS, UML, sprint notes (use PDFs)
 
-  ## Running the code
-
-  Run `npm i` to install the dependencies.
-
-  Run `npm run dev` to start the development server.
+**Run web app**
+cd app
+npm install
+npm run dev
+**Upload firmware**
+- Open `/firmware/AssistiveSmartCane.ino` in Arduino IDE
+- Board: Arduino Uno
+- Upload
