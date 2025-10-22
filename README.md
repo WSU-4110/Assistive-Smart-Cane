@@ -4,7 +4,7 @@
 - /app — web app (Vite/TypeScript)
 - /firmware — Arduino code + pinout
 - /hardware — wiring diagram, BOM
-- /docs — SRS, UML, sprint notes (use PDFs)
+- /docs — SRS, UML, sprint notes
 
 **Run web app**
 ```bash
