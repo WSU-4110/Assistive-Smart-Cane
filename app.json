@@ -13,6 +13,12 @@
     "newArchEnabled": false,
     "plugins": [
       "expo-asset"
-    ]
+    ],
+    "android": {
+      "package": "com.anonymous.assistivesmartcane"
+    },
+    "ios": {
+      "bundleIdentifier": "com.anonymous.assistivesmartcane"
+    }
   }
 }

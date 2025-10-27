@@ -1,4 +1,4 @@
-# Assistive Smart Cane
+﻿# Assistive Smart Cane
 
 Expo React Native app for assistive smart cane navigation.
 
