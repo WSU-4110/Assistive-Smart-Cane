@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "Assistive Smart Cane",
+    "slug": "assistive-smart-cane", 
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "platforms": ["ios", "android", "web"],
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true
+  }
+}

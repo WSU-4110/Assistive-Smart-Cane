@@ -1,18 +1,22 @@
-﻿# Assistive Smart Cane
+# Assistive Smart Cane
 
-**Folders**
-- /app — web app (Vite/TypeScript)
-- /firmware — Arduino code + pinout
-- /hardware — wiring diagram
-- /docs — SRS, UML, sprint notes
+Expo React Native app for assistive smart cane navigation.
 
-**Run web app**
+## Quick Start
 ```bash
-cd app
 npm install
-npm run dev
+npm start       # Start Expo dev server
+npm run ios     # Open in iOS simulator
+npm run android # Open in Android emulator
 ```
-**Upload firmware**
-- Open `/firmware/AssistiveSmartCane.ino` in Arduino IDE
-- Board: Arduino Uno
-- Upload
+
+## Development
+- Built with Expo managed workflow
+- Single codebase for iOS, Android, and web
+- Hot reloading enabled
+- No native code configuration needed
+
+## Requirements
+- Node.js
+- Expo CLI (`npm install -g @expo/cli`)
+- iOS Simulator or Android Emulator

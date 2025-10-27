@@ -1,7 +1,0 @@
-# Assistive Smart Cane – Bluetooth Communication Plan
-
-The Assistive Smart Cane will use Bluetooth Low Energy (BLE) technology to enable communication between the cane’s ESP-32 Bluetooth module and our application. When powered on, the ESP-32 will display itself as “Assistive_Cane” and continuously broadcast sensor data, such as obstacle detection readings, through a BLE characteristic (a small data channel used to send or receive information over Bluetooth). Our app will use the Web Bluetooth API to search for and connect to the ESP-32 device via a “Connect to Cane” button.
-
-Once paired, the app subscribes to live Bluetooth notifications and displays real-time updates on screen, such as “Object detected ahead” or “Safe to walk.” The ESP-32’s firmware, programmed using Arduino, handles the BLE setup and sends notifications using a simple Arduino sketch, while the frontend manages the connection and data visualization.
-
-We’ve already mapped out how the code will function on both ends. On the Arduino side, we’ll program the ESP-32 to initialize Bluetooth, name the device “Assistive_Cane,” and send sensor readings as messages over Bluetooth. It will read data from sensors like the ultrasonic distance sensor and continuously transmit updates when an obstacle is detected. On the app side, the React code will focus on connecting, receiving, and displaying those messages in real time. This setup creates a clear communication flow between the hardware and the web interface, ensuring the system works smoothly once testing begins.
