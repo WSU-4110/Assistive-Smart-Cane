@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { Ionicons, MaterialIcons } from '@expo/vector-icons';
-import Slider from '@react-native-community/slider';
+// Temporarily removed slider component for new architecture compatibility
 import { colors } from '../constants/colors';
 
 export const AlertSettingsCard: React.FC = () => {
@@ -21,22 +21,9 @@ export const AlertSettingsCard: React.FC = () => {
           />
           <Text style={styles.settingTitle}>Vibration Intensity</Text>
         </View>
-        <View style={styles.sliderContainer}>
-          <Text style={styles.sliderLabel}>Low</Text>
-          <View style={styles.sliderWrapper}>
-            <Slider
-              style={styles.slider}
-              minimumValue={0}
-              maximumValue={100}
-              value={vibrationIntensity}
-              onValueChange={setVibrationIntensity}
-              minimumTrackTintColor={colors.primaryPurple}
-              maximumTrackTintColor={colors.cardBorder}
-              thumbTintColor={colors.primaryPurple}
-            />
-            <Text style={styles.percentageText}>{Math.round(vibrationIntensity)}%</Text>
-          </View>
-          <Text style={styles.sliderLabel}>High</Text>
+        <View style={styles.valueContainer}>
+          <Text style={styles.valueText}>{Math.round(vibrationIntensity)}%</Text>
+          <Text style={styles.valueLabel}>Current setting</Text>
         </View>
       </View>
 
@@ -49,22 +36,9 @@ export const AlertSettingsCard: React.FC = () => {
           />
           <Text style={styles.settingTitle}>Buzzer Volume</Text>
         </View>
-        <View style={styles.sliderContainer}>
-          <Text style={styles.sliderLabel}>Quiet</Text>
-          <View style={styles.sliderWrapper}>
-            <Slider
-              style={styles.slider}
-              minimumValue={0}
-              maximumValue={100}
-              value={buzzerVolume}
-              onValueChange={setBuzzerVolume}
-              minimumTrackTintColor={colors.primaryBlue}
-              maximumTrackTintColor={colors.cardBorder}
-              thumbTintColor={colors.primaryBlue}
-            />
-            <Text style={styles.percentageText}>{Math.round(buzzerVolume)}%</Text>
-          </View>
-          <Text style={styles.sliderLabel}>Loud</Text>
+        <View style={styles.valueContainer}>
+          <Text style={styles.valueText}>{Math.round(buzzerVolume)}%</Text>
+          <Text style={styles.valueLabel}>Current setting</Text>
         </View>
       </View>
     </View>
@@ -100,30 +74,20 @@ const styles = StyleSheet.create({
     color: colors.textPrimary,
     marginLeft: 8,
   },
-  sliderContainer: {
-    flexDirection: 'row',
+  valueContainer: {
     alignItems: 'center',
-    paddingHorizontal: 8,
+    paddingVertical: 12,
+    backgroundColor: colors.background,
+    borderRadius: 8,
   },
-  sliderWrapper: {
-    flex: 1,
-    marginHorizontal: 12,
-    alignItems: 'center',
-  },
-  slider: {
-    width: '100%',
-    height: 40,
-  },
-  percentageText: {
-    fontSize: 14,
-    fontWeight: '600',
+  valueText: {
+    fontSize: 24,
+    fontWeight: '700',
     color: colors.textPrimary,
-    marginTop: 4,
   },
-  sliderLabel: {
+  valueLabel: {
     fontSize: 12,
     color: colors.textSecondary,
-    minWidth: 40,
-    textAlign: 'center',
+    marginTop: 4,
   },
 });

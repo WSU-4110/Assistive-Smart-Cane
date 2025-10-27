@@ -10,7 +10,7 @@
       "web"
     ],
     "userInterfaceStyle": "light",
-    "newArchEnabled": false,
+    "newArchEnabled": true,
     "plugins": [
       "expo-asset"
     ],
