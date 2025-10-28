@@ -1,50 +1,55 @@
-# Welcome to your Expo app 👋
+# Smart Cane Dashboard
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+React Native mobile app for controlling and monitoring the Assistive Smart Cane device.
 
-## Get started
+## Features
 
-1. Install dependencies
+### 📱 Dashboard Interface
+- **Connection Management** - Bluetooth pairing and status monitoring
+- **LED Control** - Toggle cane LED lights on/off  
+- **Alert Settings** - Adjust vibration intensity and buzzer volume with interactive sliders
+- **Device Status** - Monitor battery level, signal strength, and temperature
+- **Emergency Button** - Hold-to-call emergency contacts with countdown
 
-   ```bash
-   npm install
-   ```
+### 🎨 Design
+- Clean card-based UI with shadows and rounded corners
+- Light theme with blue/purple accent colors
+- Interactive sliders with live percentage updates
+- Status indicators with progress bars and signal strength meters
 
-2. Start the app
+## Technical Stack
+- **React Native** with TypeScript
+- **Expo** for development and deployment
+- **@expo/vector-icons** for iconography
+- **@react-native-community/slider** for interactive controls
 
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+## Getting Started
 
 ```bash
-npm run reset-project
+# Install dependencies
+npm install
+
+# Start development server
+npm start
+
+# Run on iOS
+npm run ios
+
+# Run on Android  
+npm run android
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Project Structure
+```
+├── App.tsx                    # Main app entry
+├── components/               # UI components
+│   ├── ConnectionCard.tsx   # Bluetooth connection
+│   ├── LedLightCard.tsx     # LED control
+│   ├── AlertSettingsCard.tsx # Settings sliders
+│   ├── CaneStatusCard.tsx   # Device status
+│   └── EmergencyButton.tsx  # Emergency contact
+├── screens/
+│   └── DashboardScreen.tsx  # Main screen layout
+└── constants/
+    └── colors.ts           # Color theme
+```
