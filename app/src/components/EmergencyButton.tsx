@@ -1,6 +1,31 @@
 import { useState, useRef } from 'react';
 import { Phone, AlertTriangle } from 'lucide-react';
 
+// Observer Pattern - Emergency Event Subject
+export type EmergencyListener = () => void;
+
+class EmergencyEventSubject {
+  private static instance: EmergencyEventSubject;
+  private listeners: Set<EmergencyListener> = new Set();
+
+  static getInstance() {
+    if (!EmergencyEventSubject.instance) {
+      EmergencyEventSubject.instance = new EmergencyEventSubject();
+    }
+    return EmergencyEventSubject.instance;
+  }
+
+  register(listener: EmergencyListener) {
+    this.listeners.add(listener);
+  }
+  unregister(listener: EmergencyListener) {
+    this.listeners.delete(listener);
+  }
+  notify() {
+    this.listeners.forEach((listener) => listener());
+  }
+}
+
 export function EmergencyButton() {
   const [isPressed, setIsPressed] = useState(false);
   const [holdProgress, setHoldProgress] = useState(0);
@@ -49,6 +74,9 @@ export function EmergencyButton() {
       clearInterval(progressIntervalRef.current);
     }
     
+    // Observer Pattern: Notify all listeners
+    EmergencyEventSubject.getInstance().notify();
+
     // Simulate emergency call
     setTimeout(() => {
       setIsCalling(false);
@@ -102,3 +130,9 @@ export function EmergencyButton() {
     </div>
   );
 }
+
+// Helper to allow external modules to register/unregister listeners
+export const EmergencyEvent = {
+  register: (listener: EmergencyListener) => EmergencyEventSubject.getInstance().register(listener),
+  unregister: (listener: EmergencyListener) => EmergencyEventSubject.getInstance().unregister(listener),
+};
