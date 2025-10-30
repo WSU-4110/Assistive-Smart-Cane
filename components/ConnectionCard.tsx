@@ -1,13 +1,37 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
 import { colors } from '../constants/colors';
+import { DeviceStatus, DeviceStatusObserver } from '../services/DeviceStatusObserver';
+import { DeviceStatusManager } from '../services/DeviceStatusManager';
 
 export const ConnectionCard: React.FC = () => {
   const [isConnected, setIsConnected] = useState(false);
+  const [batteryLevel, setBatteryLevel] = useState(0);
+
+  useEffect(() => {
+    const statusManager = DeviceStatusManager.getInstance();
+    
+    const observer: DeviceStatusObserver = {
+      update: (status: DeviceStatus) => {
+        setIsConnected(status.isConnected);
+        setBatteryLevel(status.batteryLevel);
+      }
+    };
+
+    statusManager.attach(observer);
+    const currentStatus = statusManager.getStatus();
+    setIsConnected(currentStatus.isConnected);
+    setBatteryLevel(currentStatus.batteryLevel);
+
+    return () => {
+      statusManager.detach(observer);
+    };
+  }, []);
 
   const handleConnect = () => {
-    setIsConnected(!isConnected);
+    const statusManager = DeviceStatusManager.getInstance();
+    statusManager.updateConnectionStatus(!isConnected);
   };
 
   return (
@@ -25,7 +49,7 @@ export const ConnectionCard: React.FC = () => {
         <View style={styles.deviceDetails}>
           <Text style={styles.deviceName}>Smart Cane</Text>
           <Text style={styles.deviceStatus}>
-            {isConnected ? 'Connected' : 'Disconnected'}
+            {isConnected ? `Connected • ${Math.round(batteryLevel)}% battery` : 'Disconnected'}
           </Text>
         </View>
       </View>
