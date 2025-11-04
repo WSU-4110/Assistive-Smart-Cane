@@ -1,12 +1,38 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { MaterialIcons, Ionicons } from '@expo/vector-icons';
 import { colors } from '../constants/colors';
+import { DeviceStatus, DeviceStatusObserver } from '../services/DeviceStatusObserver';
+import { DeviceStatusManager } from '../services/DeviceStatusManager';
 
 export const CaneStatusCard: React.FC = () => {
-  const batteryLevel = 85;
-  const signalStrength = 4;
-  const temperature = 22;
+  const [deviceStatus, setDeviceStatus] = useState<DeviceStatus>({
+    batteryLevel: 0,
+    signalStrength: 0,
+    temperature: 0,
+    isConnected: false,
+  });
+
+  useEffect(() => {
+    const statusManager = DeviceStatusManager.getInstance();
+    
+    const observer: DeviceStatusObserver = {
+      update: (status: DeviceStatus) => {
+        setDeviceStatus(status);
+      }
+    };
+
+    statusManager.attach(observer);
+    setDeviceStatus(statusManager.getStatus());
+
+    return () => {
+      statusManager.detach(observer);
+    };
+  }, []);
+
+  const batteryLevel = Math.round(deviceStatus.batteryLevel);
+  const signalStrength = deviceStatus.signalStrength;
+  const temperature = Math.round(deviceStatus.temperature);
 
   const renderSignalBars = () => {
     return Array.from({ length: 5 }, (_, index) => (
