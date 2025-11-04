@@ -1,0 +1,18 @@
+{
+  "expo": {
+    "name": "Smart Cane Dashboard",
+    "slug": "smart-cane-dashboard",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": false,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#F8F9FB"
+      }
+    }
+  }
+}
