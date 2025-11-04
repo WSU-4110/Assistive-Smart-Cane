@@ -6,6 +6,7 @@
 - /hardware — wiring diagram
 - /docs — SRS, UML, sprint notes
 
+<<<<<<< Updated upstream
 **Run web app**
 ```bash
 cd app
@@ -16,3 +17,11 @@ npm run dev
 - Open `/firmware/AssistiveSmartCane.ino` in Arduino IDE
 - Board: Arduino Uno
 - Upload
+=======
+  ## Running the code
+
+
+  Run `npm i` to install the dependencies.
+
+  Run `npm run dev` to start the development server.
+>>>>>>> Stashed changes
