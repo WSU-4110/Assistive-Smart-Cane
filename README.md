@@ -39,6 +39,37 @@ npm run ios
 npm run android
 ```
 
+## Testing
+
+This project uses Jest for unit testing.
+
+### Setup
+```bash
+# Testing dependencies are already installed
+# Jest configuration is in jest.config.js
+```
+
+### Running Tests
+```bash
+# Run all tests
+npm test
+
+# Run tests with coverage report
+npm run test:coverage
+
+# Run tests in watch mode (auto-rerun on changes)
+npm run test:watch
+```
+
+### Test Structure
+Tests are located in `__tests__` folders next to the code they test:
+```
+services/
+├── DeviceStatusManager.ts
+└── __tests__/
+    └── DeviceStatusManager.test.ts
+```
+
 ## Project Structure
 ```
 ├── App.tsx                    # Main app entry
