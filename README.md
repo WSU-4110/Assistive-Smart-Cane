@@ -4,14 +4,14 @@ React Native mobile app for controlling and monitoring the Assistive Smart Cane 
 
 ## Features
 
-### 📱 Dashboard Interface
+### Dashboard Interface
 - **Connection Management** - Bluetooth pairing and status monitoring
 - **LED Control** - Toggle cane LED lights on/off  
 - **Alert Settings** - Adjust vibration intensity and buzzer volume with interactive sliders
 - **Device Status** - Monitor battery level, signal strength, and temperature
 - **Emergency Button** - Hold-to-call emergency contacts with countdown
 
-### 🎨 Design
+### Design
 - Clean card-based UI with shadows and rounded corners
 - Light theme with blue/purple accent colors
 - Interactive sliders with live percentage updates
