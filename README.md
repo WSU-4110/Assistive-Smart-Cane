@@ -1,27 +1,30 @@
 # Smart Cane Dashboard
 
-React Native mobile app for controlling and monitoring the Assistive Smart Cane device.
+React Native mobile app for controlling and monitoring the Assistive Smart Cane device. This repository also includes the cane’s firmware and supporting documentation.
 
 ## Features
 
 ### Dashboard Interface
-- **Connection Management** - Bluetooth pairing and status monitoring
-- **LED Control** - Toggle cane LED lights on/off  
-- **Alert Settings** - Adjust vibration intensity and buzzer volume with interactive sliders
-- **Device Status** - Monitor battery level, signal strength, and temperature
-- **Emergency Button** - Hold-to-call emergency contacts with countdown
+- **Connection Management** – Bluetooth pairing and status monitoring  
+- **LED Control** – Toggle cane LED lights on/off  
+- **Alert Settings** – Adjust vibration intensity and buzzer volume with interactive sliders  
+- **Device Status** – Monitor battery level, signal strength, and temperature  
+- **Emergency Button** – Hold-to-call emergency contacts with countdown  
 
 ### Design
-- Clean card-based UI with shadows and rounded corners
-- Light theme with blue/purple accent colors
-- Interactive sliders with live percentage updates
-- Status indicators with progress bars and signal strength meters
+- Clean card-based UI with shadows and rounded corners  
+- Light theme with blue/purple accent colors  
+- Interactive sliders with live percentage updates  
+- Status indicators with progress bars and signal strength meters  
 
 ## Technical Stack
-- **React Native** with TypeScript
-- **Expo** for development and deployment
-- **@expo/vector-icons** for iconography
-- **@react-native-community/slider** for interactive controls
+- **React Native** with TypeScript  
+- **Expo** for development and deployment  
+- **@expo/vector-icons** for iconography  
+- **@react-native-community/slider** for interactive controls  
+- **Jest** with ts-jest for unit testing  
+
+---
 
 ## Getting Started
 
@@ -64,7 +67,7 @@ npm run test:watch
 ### Test Structure
 Tests are located in `__tests__` folders next to the code they test:
 ```
-services/
+app/services/
 ├── DeviceStatusManager.ts
 └── __tests__/
     └── DeviceStatusManager.test.ts
@@ -72,15 +75,25 @@ services/
 
 ## Project Structure
 ```
-├── App.tsx                    # Main app entry
-├── components/               # UI components
-│   ├── ConnectionCard.tsx   # Bluetooth connection
-│   ├── LedLightCard.tsx     # LED control
-│   ├── AlertSettingsCard.tsx # Settings sliders
-│   ├── CaneStatusCard.tsx   # Device status
-│   └── EmergencyButton.tsx  # Emergency contact
-├── screens/
-│   └── DashboardScreen.tsx  # Main screen layout
-└── constants/
-    └── colors.ts           # Color theme
+Assistive-Smart-Cane/
+│
+├── app/                         # React Native mobile app
+│   ├── App.tsx                  # Main app entry
+│   ├── components/              # UI components
+│   ├── screens/                 # Screens and layouts
+│   ├── constants/               # Theme and config files
+│   ├── hooks/                   # Custom React hooks
+│   ├── services/                # Business logic & Bluetooth management
+│   │   └── __tests__/           # Unit tests
+│   └── assets/                  # Images and icons
+├── firmware/                    # Arduino firmware for the cane
+├── docs/                        # Documentation
+├── tests/                       # System tests
+├── .gitignore
+├── app.json
+├── jest.config.js
+├── package.json
+├── package-lock.json
+├── tsconfig.json
+└── README.md
 ```
