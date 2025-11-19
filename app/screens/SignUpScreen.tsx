@@ -13,6 +13,7 @@ import {
 } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
 import { useAuth } from '../contexts/AuthContext';
+import { UserProfileService } from '../services/UserProfileService';
 import { colors } from '../constants/colors';
 import { SignUpFormData } from '../types/auth';
 
@@ -84,11 +85,13 @@ export const SignUpScreen: React.FC<SignUpScreenProps> = ({ onNavigateToLogin })
 
     try {
       // Create the user account with email and password
-      // Note: Profile data will be saved to Firestore in a later task
-      await signUp({
+      const firebaseUser = await signUp({
         email: formData.email,
         password: formData.password,
       });
+      
+      // Save user profile data to Firestore
+      await UserProfileService.createUserProfile(firebaseUser.uid, formData);
       
       // Show success message
       Alert.alert(
@@ -98,7 +101,6 @@ export const SignUpScreen: React.FC<SignUpScreenProps> = ({ onNavigateToLogin })
       );
       
       // Navigation will be handled by App.tsx based on auth state
-      // Profile data will be saved in a later task
     } catch (error) {
       const errorMessage = error instanceof Error ? error.message : 'Failed to create account. Please try again.';
       Alert.alert('Sign Up Error', errorMessage);
