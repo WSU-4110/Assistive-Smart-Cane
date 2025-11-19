@@ -5,35 +5,38 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 // Firebase configuration
 // Your web app's Firebase configuration
-// Environment variables can override these values for different environments
 const firebaseConfig = {
-  apiKey: process.env.EXPO_PUBLIC_FIREBASE_API_KEY || "AIzaSyCwOZnBleT4treaxlATbd_w7IeekU7gGDs",
-  authDomain: process.env.EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN || "assistive-smart-cane.firebaseapp.com",
-  projectId: process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID || "assistive-smart-cane",
-  storageBucket: process.env.EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET || "assistive-smart-cane.firebasestorage.app",
-  messagingSenderId: process.env.EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID || "335835149086",
-  appId: process.env.EXPO_PUBLIC_FIREBASE_APP_ID || "1:335835149086:web:06503565a6d60c964dcf0f",
-  measurementId: process.env.EXPO_PUBLIC_FIREBASE_MEASUREMENT_ID || "G-43W9KYLBBZ", // For Analytics (optional)
+  apiKey: "AIzaSyCwOZnBleT4treaxlATbd_w7IeekU7gGDs",
+  authDomain: "assistive-smart-cane.firebaseapp.com",
+  projectId: "assistive-smart-cane",
+  storageBucket: "assistive-smart-cane.firebasestorage.app",
+  messagingSenderId: "335835149086",
+  appId: "1:335835149086:web:06503565a6d60c964dcf0f",
+  measurementId: "G-43W9KYLBBZ"
 };
 
 // Initialize Firebase App (only if not already initialized)
 let app: FirebaseApp;
-if (getApps().length === 0) {
-  app = initializeApp(firebaseConfig);
-} else {
+try {
+  if (getApps().length === 0) {
+    app = initializeApp(firebaseConfig);
+  } else {
+    app = getApps()[0];
+  }
+} catch (error) {
+  // If initialization fails, try to get existing app
   app = getApps()[0];
+  if (!app) {
+    throw new Error('Failed to initialize Firebase app');
+  }
 }
 
-// Initialize Firebase Auth with AsyncStorage persistence
-// This ensures auth state persists between app sessions
+// Initialize Firebase Auth with React Native persistence
 let auth: Auth;
-
 try {
-  // Try to initialize auth with AsyncStorage persistence first
-  // Access getReactNativePersistence from firebase/auth
-  // @ts-ignore - getReactNativePersistence exists at runtime in Firebase v10.14+
+  // Try to get getReactNativePersistence from firebase/auth
   const firebaseAuth = require('firebase/auth');
-  const getReactNativePersistence = (firebaseAuth as any).getReactNativePersistence;
+  const getReactNativePersistence = firebaseAuth.getReactNativePersistence;
   
   if (getReactNativePersistence && typeof getReactNativePersistence === 'function') {
     // Initialize with AsyncStorage persistence
@@ -49,9 +52,9 @@ try {
   if (error.code === 'auth/already-initialized' || error.message?.includes('already been initialized')) {
     auth = getAuth(app);
   } else {
-    // For any other error, try to get existing auth
+    // Fallback: use getAuth if initializeAuth fails
+    console.warn('Firebase Auth: Could not initialize with persistence, using default:', error.message);
     auth = getAuth(app);
-    console.warn('Firebase Auth: Could not initialize with AsyncStorage persistence:', error.message);
   }
 }
 
