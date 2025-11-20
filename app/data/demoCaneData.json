@@ -1,0 +1,1662 @@
+[
+  {
+    "distance": 152,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 152,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 152,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 152,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 152,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 152,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 152,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 152,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 152,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 152,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 108,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 108,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 108,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 107,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 106,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 106,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 106,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 103,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 101,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 96,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 93,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 92,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 92,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 364,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 554,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 414,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 312,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 240,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 190,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 155,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 131,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 113,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 103,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 92,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 83,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 76,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 74,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 69,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 70,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 66,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 63,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 64,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 62,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 69,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 66,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 68,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 70,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 71,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 72,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 73,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 74,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 74,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 74,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 73,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 73,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 73,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 73,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 71,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 67,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 63,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 60,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 62,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 63,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 64,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 68,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 68,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 68,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 69,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 66,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 68,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 70,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 70,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 70,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 69,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 68,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 65,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 60,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 65,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 68,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 71,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 75,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 71,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 62,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 63,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 65,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 52,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 54,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 59,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 59,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 65,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 51,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 53,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 56,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 61,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 64,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 70,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 74,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 56,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 41,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 31,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 24,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 18,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 14,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 11,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 9,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 7,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 28,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 21,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 17,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 29,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 21,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 16,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 12,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 32,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 39,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 46,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 49,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 37,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 27,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 23,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 18,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 18,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 22,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 28,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 35,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 41,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 46,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 51,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 57,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 60,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 64,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 67,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 70,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 72,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 74,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 76,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 79,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 81,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 83,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 85,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 87,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 88,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 94,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 100,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 100,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 98,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 96,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 366,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 304,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 261,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 230,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 205,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 187,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 174,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 165,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 163,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 158,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 154,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 152,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 154,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 151,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 154,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 152,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 154,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 155,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 156,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 157,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 157,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 157,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 157,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 157,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 157,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 157,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 157,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 157,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 157,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 154,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 155,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 156,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 153,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 155,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 156,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 157,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 141,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 126,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 114,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 103,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 94,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 86,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 80,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 79,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 78,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 77,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 70,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 65,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 60,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 59,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 55,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 52,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 49,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 46,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 44,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 43,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 43,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 42,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 41,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 41,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 40,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 40,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 40,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 39,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 38,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 38,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 38,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 38,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 38,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 38,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 38,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 38,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 38,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 38,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 38,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 38,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 38,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 38,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 38,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 39,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 40,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 44,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 47,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 50,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 57,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 67,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 75,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 84,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 63,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 93,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 71,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 122,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 92,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 72,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 56,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 43,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 32,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 23,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 17,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 12,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 9,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 9,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 10,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 96,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 142,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 174,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 195,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 436,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 604,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 495,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 396,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 326,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 277,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 243,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 219,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 156,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 115,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 91,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 77,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 70,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 64,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 60,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 57,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 55,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 53,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 53,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 52,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 52,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 51,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 51,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 50,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 49,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 49,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 48,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 48,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 48,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 48,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 48,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 47,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 44,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 330,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 280,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 245,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 174,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 124,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 136,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 97,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 70,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 51,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 85,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 109,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 125,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 137,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 97,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 70,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 53,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 336,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 534,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 386,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 284,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 215,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 167,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 133,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 109,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 94,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 82,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 75,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 101,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 119,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 132,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 141,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 147,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 147,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 151,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 150,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 153,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 155,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 157,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 158,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 159,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 160,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 160,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 160,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 160,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 160,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 183,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 176,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 211,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 447,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 612,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 498,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 429,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 350,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 296,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 239,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 197,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 166,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 415,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 314,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 242,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 191,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 155,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 130,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 110,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 96,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 87,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 78,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 71,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 66,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 61,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 57,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 54,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 53,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 51,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 50,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 49,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 57,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 61,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 64,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 66,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 121,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 159,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 186,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 204,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 217,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 226,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 233,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 462,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 348,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 273,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 215,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 236,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 196,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 137,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 97,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 69,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 50,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 36,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 26,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 19,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 14,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 11,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 10,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 9,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 9,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 9,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 9,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 9,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 7,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 6,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 6,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 88,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 145,
+    "zone": "DANGER"
+  },
+  {
+    "distance": 171,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 152,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 192,
+    "zone": "WARNING"
+  },
+  {
+    "distance": 203,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 211,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 222,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 225,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 192,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 183,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 177,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 157,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 158,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 159,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 159,
+    "zone": "SAFE"
+  },
+  {
+    "distance": 159,
+    "zone": "SAFE"
+  }
+]

@@ -6,6 +6,7 @@ import { AlertSettingsCard } from '../components/AlertSettingsCard';
 import { CaneStatusCard } from '../components/CaneStatusCard';
 import { EmergencyButton } from '../components/EmergencyButton';
 import { colors } from '../constants/colors';
+import { CaneDetectionCard } from "../components/CaneDetectionCard";
 
 export const DashboardScreen: React.FC = () => {
   return (
@@ -21,6 +22,8 @@ export const DashboardScreen: React.FC = () => {
         <AlertSettingsCard />
         <CaneStatusCard />
         <EmergencyButton />
+        <CaneDetectionCard />
+        
       </ScrollView>
     </View>
   );
