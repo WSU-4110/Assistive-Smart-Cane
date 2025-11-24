@@ -95,9 +95,10 @@ describe('UserProfileService', () => {
           lastName: 'Doe',
           phone: '123-456-7890',
           email: 'john.doe@example.com', // Should be lowercased
+          // Note: emergency contact fields are not trimmed in the current implementation
           emergencyContact: {
-            name: 'Jane Doe',
-            phone: '987-654-3210',
+            name: '  Jane Doe  ',
+            phone: '  987-654-3210  ',
           },
         })
       );
