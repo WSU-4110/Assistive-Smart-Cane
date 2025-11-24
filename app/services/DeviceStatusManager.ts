@@ -9,6 +9,8 @@ export class DeviceStatusManager implements DeviceStatusSubject {
     isConnected: false,
   };
 
+  private intervalId: ReturnType<typeof setInterval> | null = null;
+
   private static instance: DeviceStatusManager;
 
   private constructor() {
@@ -47,7 +49,7 @@ export class DeviceStatusManager implements DeviceStatusSubject {
   }
 
   private startStatusUpdates(): void {
-    setInterval(() => {
+    this.intervalId = setInterval(() => {
       if (this.status.isConnected) {
         this.status.batteryLevel = Math.max(0, this.status.batteryLevel - Math.random() * 0.5);
         this.status.signalStrength = Math.floor(Math.random() * 5) + 1;
@@ -55,5 +57,13 @@ export class DeviceStatusManager implements DeviceStatusSubject {
         this.notify();
       }
     }, 3000);
+  }
+
+  // Stop the periodic status updates (useful for tests and shutdown)
+  public stopStatusUpdates(): void {
+    if (this.intervalId) {
+      clearInterval(this.intervalId);
+      this.intervalId = null;
+    }
   }
 }

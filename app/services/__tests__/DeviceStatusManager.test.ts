@@ -15,6 +15,12 @@ describe('DeviceStatusManager', () => {
   });
 
   afterEach(() => {
+    // stop the manager's background interval so Jest can exit cleanly
+    try {
+      manager.stopStatusUpdates();
+    } catch (e) {
+      // ignore if method not present
+    }
     jest.clearAllTimers();
   });
 

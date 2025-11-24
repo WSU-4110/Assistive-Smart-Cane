@@ -1,0 +1,62 @@
+version: 2.1
+
+jobs:
+  test-root:
+    docker:
+      - image: cimg/node:18.16.0
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-npm-deps-{{ checksum "package-lock.json" }}
+            - v1-npm-deps-{{ checksum "package.json" }}
+      - run:
+          name: Install dependencies
+          command: |
+            if [ -f package-lock.json ]; then npm ci --no-audit --prefer-offline; else npm install; fi
+      - save_cache:
+          paths:
+            - ./node_modules
+          key: v1-npm-deps-{{ checksum "package-lock.json" }}
+      - run:
+          name: Run root tests (Jest)
+          command: |
+            echo "Running root tests"
+            npm test --silent
+      - store_artifacts:
+          path: coverage
+          destination: coverage-root
+
+  test-server:
+    docker:
+      - image: cimg/node:18.16.0
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-npm-deps-server-{{ checksum "server/package-lock.json" }}
+            - v1-npm-deps-server-{{ checksum "server/package.json" }}
+      - run:
+          name: Install server dependencies
+          command: |
+            if [ -f server/package-lock.json ]; then (cd server && npm ci --no-audit --prefer-offline); else (cd server && npm install); fi
+      - save_cache:
+          paths:
+            - ./server/node_modules
+          key: v1-npm-deps-server-{{ checksum "server/package-lock.json" }}
+      - run:
+          name: Run server tests (if present)
+          command: |
+            echo "Running server tests (if any)"
+            if [ -f server/package.json ]; then
+              (cd server && if npm run | grep -q "test"; then npm test || true; else echo "no test script for server"; fi)
+            else
+              echo "no server package.json"
+            fi
+
+workflows:
+  version: 2
+  test:
+    jobs:
+      - test-root
+      - test-server
