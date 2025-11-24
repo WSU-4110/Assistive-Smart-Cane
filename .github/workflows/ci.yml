@@ -36,9 +36,20 @@ jobs:
       - name: Run tests (Jest)
         run: npm test --silent
 
-      - name: Upload coverage (if present)
+      - name: Package coverage (if present)
+        id: package_coverage
         if: always()
+        run: |
+          if [ -d coverage ]; then
+            tar -czf coverage-root.tar.gz coverage
+            echo "has_coverage=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_coverage=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Upload coverage artifact
+        if: ${{ always() && steps.package_coverage.outputs.has_coverage == 'true' }}
         uses: actions/upload-artifact@v4
         with:
           name: coverage-root
-          path: coverage || 
+          path: coverage-root.tar.gz
