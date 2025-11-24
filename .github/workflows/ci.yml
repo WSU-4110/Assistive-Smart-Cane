@@ -6,6 +6,11 @@ on:
   pull_request:
     branches: [ main, master ]
 
+# Ensure only one workflow run per branch is active; cancel previous runs when a new one starts
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   test:
     runs-on: ubuntu-latest

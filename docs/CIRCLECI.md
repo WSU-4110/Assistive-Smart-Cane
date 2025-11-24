@@ -28,3 +28,9 @@ git push --set-upstream origin circle-ci
 ## Notes & next steps
 - The server currently has no meaningful `test` script; if you want server tests to fail the build when present, we can update `server/package.json` to include a real test script and update the CircleCI job to treat failures as fatal.
 - If you want JUnit test reporting, coverage artifacts, or splitting matrix tests across Node versions, I can update `.circleci/config.yml` to add those capabilities.
+
+## Cancel previous runs when new run starts (one pipeline at a time)
+
+GitHub Actions: the repo workflow already uses `concurrency` to cancel any in-progress workflow run for the same branch when a new run is triggered. This ensures only one pipeline runs per branch.
+
+CircleCI: CircleCI offers "Cancel redundant builds" in the project settings (UI). To enable equivalent behavior on CircleCI, open the project in the CircleCI app, go to **Project Settings → Advanced**, and enable **Cancel redundant builds** (this will cancel older workflows for the same branch when new commits are pushed).
