@@ -1,3 +1,4 @@
+//
 import { DeviceStatusManager } from '../DeviceStatusManager';
 import { DeviceStatusObserver, DeviceStatus } from '../DeviceStatusObserver';
 

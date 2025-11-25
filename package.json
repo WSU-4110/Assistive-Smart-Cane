@@ -33,5 +33,12 @@
     "ts-jest": "^29.4.5",
     "typescript": "~5.9.2"
   },
-  "private": true
+  "private": true,
+  "description": "React Native mobile app for controlling and monitoring the Assistive Smart Cane device. This repository also includes the cane’s firmware and supporting documentation.",
+  "directories": {
+    "doc": "docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
