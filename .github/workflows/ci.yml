@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [ main, master, circle-ci ]
+    branches: [ main, master, circle-ci, fae_zwen_unittest ]
   pull_request:
     branches: [ main, master ]
 
@@ -30,16 +30,13 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: TypeScript type check
-        run: npx tsc --noEmit
-
-      - name: Run tests (Jest)
-        run: npm test --silent
+      - name: Build and run tests (npm run ci)
+        run: npm run ci
 
       - name: Package coverage (if present)
         id: package_coverage
         if: always()
-        run: |
+        run: |git status
           if [ -d coverage ]; then
             tar -czf coverage-root.tar.gz coverage
             echo "has_coverage=true" >> $GITHUB_OUTPUT
