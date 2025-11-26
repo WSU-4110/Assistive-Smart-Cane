@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { View, Text, StyleSheet, FlatList } from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
 import { colors } from "../constants/colors";
+import { computeZoneColor, normalizeZone } from "./utils/CaneDetectionCard.helpers";
 
 const rawData = require("../data/demoCaneData.json") as {
   distance: number;
